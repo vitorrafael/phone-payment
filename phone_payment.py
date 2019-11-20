@@ -9,7 +9,7 @@ def main():
     spreadsheet = Spreadsheet(creds)
 
     while True:
-        operation = int(input('Operations:\n1 - Read sheet\n2 - Update sheet\n3 - Cancel'))
+        operation = int(input('Operations:\n1 - Read sheet\n2 - Update sheet\n3 - Cancel\n'))
         if operation == 1:  
             values = spreadsheet.get_spreadsheet_values("A1:E12")
             spreadsheet.print_sheet(values)
