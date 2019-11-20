@@ -47,3 +47,7 @@ class Spreadsheet:
             spreadsheetId=self.SPREADSHEET_ID, range=range,
             valueInputOption="USER_ENTERED", body=body
         ).execute()
+    
+    def print_sheet(self, sheet):
+        for row in sheet:
+            print(f"{row[0]:^15}|{row[1]:^8}|{row[2]:^8}|{row[3]:^8}")
